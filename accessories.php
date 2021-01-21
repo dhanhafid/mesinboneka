@@ -1,7 +1,7 @@
 <?php
 require 'marionette.php';
 
-class Acc extends Mar {
+class Accessories extends Marionette {
     public $accessories = [
         ["name" => "hat", "price" => 30],
         ["name" => "stick", "price" => 20],
@@ -22,26 +22,4 @@ class Acc extends Mar {
 }
 
 
-$acc1 = new Acc;
-$acc2 = new Acc;
-$acc3 = new Acc;
-
-$randomNumberOfAcc = rand(1,3);
-
-if($randomNumberOfAcc == 1){
-    $acc1->pickAcc();
-}elseif($randomNumberOfAcc == 2){
-    $acc1->pickAcc();
-    $acc2->pickAcc();
-}elseif($randomNumberOfAcc == 3){
-    $acc1->pickAcc();
-    $acc2->pickAcc();
-    $acc3->pickAcc();
-}
-
-echo "$acc1->selectedAccName $acc1->selectedAccPrice \n";
-echo "$acc2->selectedAccName $acc2->selectedAccPrice \n";
-echo "$acc3->selectedAccName $acc3->selectedAccPrice \n";
-
-$totalBeforeTax = $mar->selectedMarPrice + $acc1->selectedAccPrice + $acc2->selectedAccPrice + $acc3->selectedAccPrice;
 

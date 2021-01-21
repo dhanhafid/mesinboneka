@@ -1,6 +1,6 @@
 <?php
 
-class Mar {
+class Marionette {
     public $marionette = [
         ["name" => "Bear", "price" => 900],
         ["name" => "Eagle", "price" => 900],
@@ -19,9 +19,6 @@ class Mar {
     }
 }
 
-$mar = new Mar;
-$mar->pickMar();
 
-echo "$mar->selectedMarName $mar->selectedMarPrice\n\n";
 
 ?>

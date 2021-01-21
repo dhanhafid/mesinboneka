@@ -1,7 +1,7 @@
 <?php
 require 'accessories.php';
 
-class Rule extends Acc {
+class Rule extends Accessories {
     public $totalAfterTax;
     
     public function count($totalBeforeTax, $accessories1, $accessories2 , $accessories3 ) {
@@ -22,7 +22,4 @@ class Rule extends Acc {
     }
 }
 
-$rule = new Rule;
 
-$rule->count($totalBeforeTax, $acc1->selectedAccName, $acc2->selectedAccName, $acc3->selectedAccName );
-echo "\n----------------------------------------\ntotal cost $rule->totalAfterTax";
